@@ -190,3 +190,15 @@ input[name="more-text"] {
 .main-info__img--pic {
     width: 100%;
 }
+
+.up {
+    display: none;
+}
+
+.main-info__more-text:has(#more-text:checked) .up {
+    display: inline-block;
+}
+
+.main-info__more-text:has(#more-text:checked) .down {
+    display: none;
+}
