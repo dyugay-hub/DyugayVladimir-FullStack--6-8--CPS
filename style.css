@@ -175,7 +175,7 @@ label[for="feedback"] {
 }
 
 .main-info__more-text {
-    margin-top: 5px;
+    margin-top: 15px;
     margin-left: 15px;
 }
 
@@ -183,12 +183,15 @@ input[name="more-text"] {
     display: none;
 }
 
+
 .main-info:has(#more-text:checked) .info-text {
     height: 100%;
 }
 
 .main-info__img--pic {
+    padding-top: 15px;
     width: 100%;
+    height: auto;
 }
 
 .up {
