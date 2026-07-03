@@ -4,6 +4,17 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: "TTLakes";
+  src: url("./TTLakes/TTLakes-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+body {
+  font-family: "TTLakes", Arial, sans-serif;
+}
+
 .header {
   width: 100%;
   height: 88px;
@@ -67,7 +78,7 @@
   background-color: #f8f8f8;
   background-size: cover;
   height: 100vh;
-  border-top: 1px solid #41f6d7;
+  border-top: 0.5px solid #41f6d7;
 }
 
 .main-info__header {
@@ -96,36 +107,34 @@
 }
 
 .main-info__radio:has(#repair-accs:checked) label[for="repair-accs"] {
-    background-color: white;
-    border: 1px solid #41f6d7;
+  background-color: white;
+  border: 1px solid #41f6d7;
 }
 
 .main-info__radio:has(#service:checked) label[for="service"] {
-    background-color: white;
-    border: 1px solid #41f6d7;
+  background-color: white;
+  border: 1px solid #41f6d7;
 }
 
 .main-info__radio:has(#price:checked) label[for="price"] {
-    background-color: white;
-    border: 1px solid #41f6d7;
+  background-color: white;
+  border: 1px solid #41f6d7;
 }
 
 .main-info__radio:has(#adress:checked) label[for="adress"] {
-    background-color: white;
-    border: 1px solid #41f6d7;
+  background-color: white;
+  border: 1px solid #41f6d7;
 }
 
-
 .main-info__radio:has(#special:checked) label[for="special"] {
-    background-color: white;
-    border: 1px solid #41f6d7;
+  background-color: white;
+  border: 1px solid #41f6d7;
 }
 
 .main-info__radio:has(#feedback:checked) label[for="feedback"] {
-    background-color: white;
-    border: 1px solid #41f6d7;
+  background-color: white;
+  border: 1px solid #41f6d7;
 }
-
 
 .main-info__radio::-webkit-scrollbar {
   display: none; /* Chrome, Safari, новый Edge */
@@ -166,8 +175,8 @@ label[for="feedback"] {
   padding-left: 15px;
   padding-right: 15px;
   overflow-y: hidden;
-  height: 145px;
-  color: rgb(68, 68, 68);
+  height: 140px;
+  color: rgb(102, 102, 102);
 }
 
 .main-info:has(#repair-accs:checked) .main-info__text--repair-accs {
@@ -208,10 +217,9 @@ input[name="more-text"] {
 }
 
 .main-info__img--pic {
-  padding: 15px;
+  padding-top: 20px;
   width: 100%;
   height: auto;
-  border-radius: 20px;
 }
 
 .up {
@@ -225,29 +233,46 @@ input[name="more-text"] {
 .main-info__more-text:has(#more-text:checked) .down {
   display: none;
 }
+/* для телефона внизу */
+@media (max-width: 770px) {
+  .right-item {
+    display: none;
+  }
 
-@media(max-width:770px) {
-    .right-item {
-        display: none;
-    }
+  .header__nav-search1 {
+    order: 1;
+  }
 
-    .left-item {
-        display: flex;
-        width: 100%;
-        justify-content: space-around;
-        align-items: center;
-        
-    }
+  .left-item {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-    .header__nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-
+  .header__nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .label[for="more-text"] {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .down {
+    padding-left: 15px;
+  }
+  .up {
+    padding-left: 15px;
+  }
+  .main-info__text {
+    overflow-y: hidden;
+  }
+  .deckstop {
+    display: none;
+  }
 }
-
+/* для планшета */
 @media (min-width: 770px) {
   .media {
     display: flex;
@@ -257,7 +282,7 @@ input[name="more-text"] {
   .header__nav-repair1 {
     display: none;
   }
-  
+
   .left-item {
     display: flex;
     justify-content: start;
@@ -272,7 +297,6 @@ input[name="more-text"] {
     width: 100%;
     gap: 20px;
   }
-
 
   .header__nav-phone {
     order: -2;
@@ -290,8 +314,8 @@ input[name="more-text"] {
     order: -2;
   }
 
-  .main-info__img {
-    width: 500px;
+  .main-info__img--pic {
+    width: 400px;
   }
 
   .header__nav-main {
@@ -308,11 +332,51 @@ input[name="more-text"] {
   .header__nav-phone {
     justify-self: end;
   }
+  .main-info__img--pic {
+    padding: 15px;
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+  }
+  .main-info__text {
+    line-height: 24px;
+    overflow-y: hidden;
+  }
+  .deckstop {
+    display: none;
+  }
 }
+/* для пк */
+@media (min-width: 1000px) {
+  .header {
+    display: none;
+  }
 
+  .main-info__img--pic {
+    width: auto;
+    height: 380px;
+  }
+  .media {
+    display: flex;
+    justify-content: space-around;
+  }
+  .main-info__text {
+    overflow-y: hidden;
+  }
 
-@media(min-width:1000px) {
-    .header {
-        display: none;
-    }
+  .deckstop input {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .deckstop {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-right: 20px;
+  }
 }
