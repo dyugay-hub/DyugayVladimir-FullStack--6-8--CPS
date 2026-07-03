@@ -1,181 +1,242 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <main>
+      <header class="header">
+        <nav class="header__nav">
+          <div class="left-item">
+            <div class="header__nav-links">
+              <a class="header__nav-links--burger" href="#"
+                ><img src="./img/burger.svg" alt="burger btn"
+              /></a>
+            </div>
 
-        <header class="header">
-            <nav class="header__nav">
+            <div class="header__nav-main">
+              <a class="header__nav-main--btn" href="#"
+                ><img src="./img/mainbtn.svg" alt="main btn"
+              /></a>
+            </div>
 
-                <div class="header__nav-links">
-                     <a class="header__nav-links--burger" href="#"><img src="./img/burger.svg" alt="burger btn"></a>
-                </div>
-
-                <div class="header__nav-main">
-                     <a class="header__nav-main--btn" href="#"><img src="./img/mainbtn.svg" alt="main btn"></a>
-
-                </div>
-
-                <div class="header__nav-divider">
-                     <a class="header__nav-divider--img" href="#"><img src="./img/divider-2.svg" alt="divider"></a>
-
-                </div>
-
-                <div class="header__nav-repair">
-                     <a class="header__nav-repair--img" href="#"><img src="./img/repair.svg" alt="repair"></a>
-                </div>
-
-                <div class="header__nav-search">
-                        <a class="header__nav-search--img" href="#"><img src="./img/search.svg" alt="search btn"></a>
-
-                  </div>
+            <div class="header__nav-divider">
+              <a class="header__nav-divider--img" href="#"
+                ><img src="./img/divider-2.svg" alt="divider"
+              /></a>
+            </div>
 
 
-            <!-- <button class="header__nav-menu" type="submit">
-                <div class="header__nav-menu-box">
-                    <div class="header__nav-menu-box--first-line"></div>
-                    <div class="header__nav-menu-box--second-line"></div>
-                    <div class="header__nav-menu-box--third-line"></div>
-                </div>
-            </button>
+            <div class="header__nav-search1">
+              <a class="header__nav-search1--img" href="#"
+                ><img src="./img/search.svg" alt="search btn"
+              /></a>
+            </div>
 
 
-            <button class="header__nav-main" type="submit">
-                Main page return
+            <div class="header__nav-repair1">
+              <a class="header__nav-repair1--img" href="#"
+                ><img src="./img/repair.svg" alt="repair"
+              /></a>
+            </div>
 
-            </button>
 
-            <button class="header__nav-tech">
 
-            </button>
+          </div>
 
-            <button class="header__nav-search" type="submit">
+          <div class="right-item">
+            <div class="header__nav-repair">
+              <a class="header__nav-repair--img" href="#"
+                ><img src="./img/repair.svg" alt="repair"
+              /></a>
+            </div>
 
-            </button> -->
+            <div class="header__nav-search">
+              <a class="header__nav-search--img" href="#"
+                ><img src="./img/search.svg" alt="search btn"
+              /></a>
+            </div>
 
+            <div class="header__nav-phone">
+              <a class="header__nav-phone--img" href="#">
+                <img src="./img/call.svg" alt="call icon" />
+              </a>
+            </div>
+
+            <div class="header__nav-message">
+              <a class="header__nav-message--img" href="#">
+                <img src="./img/chat.svg" alt="message icon" />
+              </a>
+            </div>
+
+            <div class="header__nav-person">
+              <a class="header__nav-person--img" href="#">
+                <img src="./img/profile.svg" alt="profile icon" />
+              </a>
+            </div>
+
+            <div class="header__nav-divider1">
+              <a class="header__nav-divider1--img" href="#"
+                ><img src="./img/divider-2.svg" alt="divider"
+              /></a>
+            </div>
+          </div>
         </nav>
+      </header>
 
-    </header>
-
-        
-
-
-    <section class="main-info">
-
+      <section class="main-info">
         <div class="main-info__header">
-        
-            <h1 class="main-info__header--h1">
-                Услуги и сервисы
-            </h1>
-        
+          <h1 class="main-info__header--h1">Услуги и сервисы</h1>
         </div>
 
         <div class="main-info__radio">
+          <input
+            checked
+            class="main-info__radio--repair-accs"
+            id="repair-accs"
+            type="radio"
+            name="radio"
+            value="repair-accs"
+          />
+          <label class="scrl" for="repair-accs">Ремонтируемые устройства</label>
 
-            <input checked class="main-info__radio--repair-accs" id="repair-accs" type="radio" name="radio" value="repair-accs">
-            <label class="srcl" for="repair-accs">Ремонтируемые устройства</label>
-            
-            <input class="main-info__radio--servise" type="radio" name="radio" id="service">
-            <label class="scrl" for="service">Дополнительные услуги</label>
+          <input
+            class="main-info__radio--servise"
+            type="radio"
+            name="radio"
+            id="service"
+          />
+          <label class="scrl" for="service">Дополнительные услуги</label>
 
-            <input class="main-info__radio--price" type="radio" name="radio" id="price">
-            <label class="scrl" for="price">Цены на услуги</label>
+          <input
+            class="main-info__radio--price"
+            type="radio"
+            name="radio"
+            id="price"
+          />
+          <label class="scrl" for="price">Цены на услуги</label>
 
-            <input class="main-info__radio--adress" type="radio" name="radio" id="adress">
-            <label class="scrl" for="adress">Адреса сервисных центров</label>
+          <input
+            class="main-info__radio--adress"
+            type="radio"
+            name="radio"
+            id="adress"
+          />
+          <label class="scrl" for="adress">Адреса сервисных центров</label>
 
-            <input class="main-info__radio--special" type="radio" name="radio" id="special">
-            <label class="scrl" for="special">Специальные цены</label>
+          <input
+            class="main-info__radio--special"
+            type="radio"
+            name="radio"
+            id="special"
+          />
+          <label class="scrl" for="special">Специальные цены</label>
 
-            <input class="main-info__radio--feedback" type="radio" name="radio" id="feedback">
-            <label class="scrl" for="feedback">Отзывы</label>
-
-               
-           
+          <input
+            class="main-info__radio--feedback"
+            type="radio"
+            name="radio"
+            id="feedback"
+          />
+          <label class="scrl" for="feedback">Отзывы</label>
         </div>
-        
-        
-        <div class="main-info__text">
-            <div class="main-info__text--repair-accs info-text">
-                Мы являемся авторизованным сервисным центром по ремонту техники Dell. У нас вы можете отремонтировать ноутбуки, моноблоки, системные блоки, 
-                мониторы и другое оборудование Dell с официальной гарантией производителя.
-                Наши специалисты выполняют диагностику, замену комплектующих, восстановление после залития, ремонт материнских плат, настройку программного обеспечения
-                и профилактическое обслуживание устройств. Для ремонта используются
-                оригинальные запчасти и профессиональное оборудование.
 
-            </div>
+        <section class="media">
+          <section class="left1">
+            <div class="main-info__text">
+              <div class="main-info__text--repair-accs info-text">
+                Мы являемся авторизованным сервисным центром по ремонту техники
+                Dell. У нас вы можете отремонтировать ноутбуки, моноблоки,
+                системные блоки, мониторы и другое оборудование Dell с
+                официальной гарантией производителя. Наши специалисты выполняют
+                диагностику, замену комплектующих, восстановление после залития,
+                ремонт материнских плат, настройку программного обеспечения и
+                профилактическое обслуживание устройств. Для ремонта
+                используются оригинальные запчасти и профессиональное
+                оборудование.
+              </div>
 
-            <div class="main-info__text--service info-text">
-                Помимо ремонта техники Dell, наш сервисный центр предоставляет дополнительные услуги для удобства клиентов. Мы выполняем диагностику устройств, чистку 
-                системы охлаждения, замену термопасты, установку и настройку программного обеспечения, восстановление данных и перенос информации на новое устройство.
-                Также вы можете обратиться к нам за консультацией по эксплуатации техники, подбором комплектующих и профилактическим обслуживанием. Все работы выполняются специалистами
-                сервисного центра с использованием профессионального оборудования.
+              <div class="main-info__text--service info-text">
+                Помимо ремонта техники Dell, наш сервисный центр предоставляет
+                дополнительные услуги для удобства клиентов. Мы выполняем
+                диагностику устройств, чистку системы охлаждения, замену
+                термопасты, установку и настройку программного обеспечения,
+                восстановление данных и перенос информации на новое устройство.
+                Также вы можете обратиться к нам за консультацией по
+                эксплуатации техники, подбором комплектующих и профилактическим
+                обслуживанием. Все работы выполняются специалистами сервисного
+                центра с использованием профессионального оборудования.
+              </div>
 
-            </div>
+              <div class="main-info__text--price info-text">
+                Стоимость ремонта зависит от типа устройства, характера
+                неисправности и необходимости замены комплектующих. Перед
+                началом работ наши специалисты проводят диагностику и сообщают
+                точную цену ремонта. Мы заранее согласовываем стоимость с
+                клиентом, поэтому вы будете знать итоговую сумму до начала
+                ремонта. В цену могут входить диагностика, работа мастера,
+                замена деталей, настройка устройства и гарантийное обслуживание
+                после ремонта.
+              </div>
 
-            <div class="main-info__text--price info-text">
-                Стоимость ремонта зависит от типа устройства, характера неисправности и необходимости замены комплектующих. Перед началом работ наши специалисты проводят
-                диагностику и сообщают точную цену ремонта.
-                Мы заранее согласовываем стоимость с клиентом, поэтому вы будете знать итоговую сумму до начала ремонта. В цену могут входить диагностика, работа мастера, замена деталей, настройка
-                устройства и гарантийное обслуживание после ремонта.
+              <div class="main-info__text--adress info-text">
+                Вы можете обратиться в ближайший сервисный центр Dell для
+                диагностики, ремонта и обслуживания вашей техники. Наши
+                специалисты помогут определить неисправность, проконсультируют
+                по срокам ремонта и подскажут доступные варианты обслуживания.
+                Перед посещением рекомендуем уточнить режим работы сервисного
+                центра и наличие необходимых комплектующих. Это поможет заранее
+                спланировать визит и быстрее получить готовое устройство после
+                ремонта.
+              </div>
 
-            </div>
-
-            <div class="main-info__text--adress info-text">
-                Вы можете обратиться в ближайший сервисный центр Dell для диагностики, ремонта и обслуживания вашей техники. 
-                Наши специалисты помогут определить неисправность, проконсультируют по срокам ремонта и подскажут доступные варианты обслуживания.
-                Перед посещением рекомендуем уточнить режим работы сервисного центра и наличие необходимых комплектующих. Это поможет заранее спланировать 
-                визит и быстрее получить готовое устройство после ремонта.
-            </div>
-
-            <div class="main-info__text--special info-text">
-                Для наших клиентов действуют специальные цены на отдельные виды ремонта и обслуживания техники Dell. Скидки могут распространяться на диагностику, чистку системы охлаждения, 
+              <div class="main-info__text--special info-text">
+                Для наших клиентов действуют специальные цены на отдельные виды
+                ремонта и обслуживания техники Dell. Скидки могут
+                распространяться на диагностику, чистку системы охлаждения,
                 замену комплектующих и профилактическое обслуживание устройств.
-                Актуальные предложения зависят от модели устройства, типа неисправности и наличия необходимых деталей. Перед началом ремонта специалист сообщит вам доступные
-                скидки и итоговую стоимость услуги.
+                Актуальные предложения зависят от модели устройства, типа
+                неисправности и наличия необходимых деталей. Перед началом
+                ремонта специалист сообщит вам доступные скидки и итоговую
+                стоимость услуги.
+              </div>
+
+              <div class="main-info__text--feedback info-text">
+                Наши клиенты ценят качество ремонта, внимательное отношение
+                специалистов и прозрачность на каждом этапе обслуживания. Мы
+                подробно объясняем причину неисправности, согласовываем
+                стоимость работ заранее и предоставляем гарантию на выполненный
+                ремонт. Отзывы помогают нам улучшать сервис и делать
+                обслуживание техники Dell ещё удобнее. Вы можете ознакомиться с
+                мнением других клиентов или оставить свой отзыв после обращения
+                в наш сервисный центр.
+              </div>
             </div>
 
-            <div class="main-info__text--feedback info-text">
-                Наши клиенты ценят качество ремонта, внимательное отношение специалистов и прозрачность на каждом этапе обслуживания. Мы подробно объясняем причину неисправности, согласовываем
-                стоимость работ заранее и предоставляем гарантию на выполненный ремонт.
-                Отзывы помогают нам улучшать сервис и делать обслуживание техники Dell ещё удобнее. Вы можете ознакомиться с мнением других клиентов или оставить свой отзыв после обращения в наш сервисный центр.
-
-            </div>
-        
-
-        </div>
-
-
-        <div class="main-info__more-text">
-            <input type="checkbox" name="more-text" id="more-text">
-            <label for="more-text">
-                <img class="down" src="./img/down.svg" alt="icon">
-                <img class="up" src="./img/up.svg" alt="icon">
+            <div class="main-info__more-text">
+              <input type="checkbox" name="more-text" id="more-text" />
+              <label for="more-text">
+                <img class="down" src="./img/down.svg" alt="icon" />
+                <img class="up" src="./img/up.svg" alt="icon" />
                 Читать далее
-            </label>
-            
-        </div>
+              </label>
+            </div>
+          </section>
 
-        <div class="main-info__img">
-            <img class="main-info__img--pic" src="./img/logo-img1.webp" alt="logo image">
-        </div>
-       
-
-
-
-
-    </section>
-
-
+          <section class="right1">
+            <div class="main-info__img">
+              <img
+                class="main-info__img--pic"
+                src="./img/logo-img1.webp"
+                alt="logo image"
+              />
+            </div>
+          </section>
+        </section>
+      </section>
     </main>
-
-    
-    
-</body>
+  </body>
 </html>
