@@ -1,18 +1,28 @@
+@font-face {
+  font-family: "TT Lakes Compressed";
+  src: url("./TTLakes-Regular.woff") format("woff"),
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: "TT Lakes Compressed";
+    src: url("./TTLakes-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "TT Lakes Compressed";
 }
 
-@font-face {
-  font-family: "TTLakes";
-  src: url("./TTLakes/TTLakes-Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-}
+
 
 body {
-  font-family: "TTLakes", Arial, sans-serif;
+  font-family: "TT Lakes Compressed", Arial, sans-serif;
 }
 
 .header {
@@ -83,6 +93,7 @@ body {
 
 .main-info__header {
   background-color: #f8f8f8;
+  
 
   height: 50px;
 }
@@ -91,8 +102,10 @@ body {
   border-left: 4px solid #41f6d7;
   padding-left: 20px;
   padding-top: 2px;
+  font-size: 28px;
+  font-family: "TT Lakes Compressed";
+  font-weight: 700;
 
-  font-weight: bold;
 }
 
 .main-info__radio {
@@ -176,7 +189,11 @@ label[for="feedback"] {
   padding-right: 15px;
   overflow-y: hidden;
   height: 140px;
-  color: rgb(102, 102, 102);
+  color: #1B1C21;
+  letter-spacing: 0.5px;
+  line-height: 18px;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .main-info:has(#repair-accs:checked) .main-info__text--repair-accs {
@@ -233,6 +250,7 @@ input[name="more-text"] {
 .main-info__more-text:has(#more-text:checked) .down {
   display: none;
 }
+
 /* для телефона внизу */
 @media (max-width: 770px) {
   .right-item {
@@ -267,6 +285,7 @@ input[name="more-text"] {
   }
   .main-info__text {
     overflow-y: hidden;
+    color: #1B1C21;
   }
   .deckstop {
     display: none;
@@ -334,7 +353,7 @@ input[name="more-text"] {
   }
   .main-info__img--pic {
     padding: 15px;
-    width: 400px;
+    width: 360px;
     height: auto;
     border-radius: 20px;
   }
@@ -362,6 +381,8 @@ input[name="more-text"] {
   }
   .main-info__text {
     overflow-y: hidden;
+
+    
   }
 
   .deckstop input {
