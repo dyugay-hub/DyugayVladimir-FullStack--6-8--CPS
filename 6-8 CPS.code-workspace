@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../../Downloads/TTLakes"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "6-8 CPS"
+  }
+}

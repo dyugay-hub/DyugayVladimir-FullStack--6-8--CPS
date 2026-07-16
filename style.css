@@ -257,7 +257,14 @@ input[name="more-text"] {
     display: none;
   }
 
+  .header__nav-repair1 {
+    width: 40px;
+    height: 40px;
+  }
+
   .header__nav-search1 {
+    width: 40px;
+    height: 40px;
     order: 1;
   }
 
