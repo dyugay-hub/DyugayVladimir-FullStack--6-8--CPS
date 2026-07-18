@@ -271,8 +271,15 @@ input[name="more-text"] {
   .left-item {
     display: flex;
     width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .left-item-1 {
+    display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 30px;
   }
 
   .header__nav {
@@ -303,10 +310,19 @@ input[name="more-text"] {
   .media {
     display: flex;
   }
+  
+  .header__nav-divider {
+    display: none;
+  }
 
   .header__nav-search1,
   .header__nav-repair1 {
     display: none;
+  }
+
+  .header__nav {
+    display: flex;
+    align-items: center;
   }
 
   .left-item {
@@ -314,6 +330,13 @@ input[name="more-text"] {
     justify-content: start;
     align-items: center;
     gap: 10px;
+  }
+
+   .left-item-1 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
   }
 
   .right-item {
@@ -326,18 +349,25 @@ input[name="more-text"] {
 
   .header__nav-phone {
     order: -2;
+    width: 40px;
+    height: 40px;
   }
 
   .header__nav-message {
     order: -2;
+    width: 40px;
+    height: 40px;
   }
 
   .header__nav-person {
     order: -2;
+    width: 40px;
+    height: 40px;
   }
 
   .header__nav-divider1 {
     order: -2;
+    height: 32px;
   }
 
   .main-info__img--pic {
